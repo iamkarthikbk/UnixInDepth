@@ -1,0 +1,97 @@
+Course : Unix
+Assignment : 2
+
+1. Find difference between these commands ?
+   a) ls | wc -l	ls; wc -l
+   b) cat f1		cat <f1
+   c) sleep 10		sleep 10 &
+
+2. Find difference between these commands
+   a) cp f1 f2
+   b) cat f1 > f2
+   c) cat <f1 >f2
+
+3. What happens when the following commands are executed ?
+   a) ls | wc
+   b) ls > wc
+   c) cmd1; cmd2 &
+   d) (cmd1; cmd2) &
+
+4. a) Display 10th to 14th line of a file.
+   b) Display the unique words in decreasing order of frequency from a 
+      file containing a word on each line.
+   c) Remove comments from a shell script.
+   d) A file has name and salary of employees. 
+      Display the names of first five high salaried employees.
+
+
+5. Create a file ITEMS having the following data.  Fields are item 
+   code-description-rate-QOH-order placed (n for no and y for yes)
+	i006-rexin-100-100-y
+	i002-screws-12-23-n
+	i001-bolts-123-120-n
+	i005-rubber-10-10-y
+	i003-plastic-10-100-n
+	i004-nuts-200-100-y
+	i002-screws-12-23-n
+	i001-bolt-123-120-n
+
+	1. Display items for which order is not placed.
+	2. Display the description and order placed fields  for all the items.
+	3. Display the description and order placed fields for items for 
+      	   which order is placed.
+	4. Arrange the file in the order of description.
+	5. Display duplicate lines if any in the file ITEMS
+	6. Display lines that contain only 10 in them
+	7. Display all the items with item number displayed with only one 
+    	   zero (ex. i001 as i01)
+	8. Display all lines where QOH is less than 50
+	9. Display the last 2 lines of the file ITEMS
+	10. Sort the file in the order of rate and store it in a file RATE
+	11. Change the field seperator from - to : in the file RATE
+	12. Display rate and description of item  (in that order ) from 
+	    file RATE
+	13. Display the count of lines that have "screws" in them.
+	14. Display the lines that donot contain "bolts" in them.
+
+6. Create a file called STORES which has the following data :
+	i006:ammonia:100:100:123:n
+	i004:rexin:23:12:12:y
+	i002:screws:200:100:175:y
+	i001:nuts:10:100:175:n
+	i003:bolts:123:120:120:n
+	i005:rubber:10:10:10:y
+	i002:screws:200:100:175:y
+	i007:bolt:123:120:120:n
+
+	The fields are item number, description, QOH, ROL, ROQ, 
+	status(y of those items for which an order has been placed. 
+ 	N denotes that no order has been placed for that item.)
+
+	1. Arrange the file in the order of item number.
+	2. Display the item number, description and the reorder quantity.
+	3. Display the item number, description and the reorder quantity only 
+	   for those items for which an order is placed.
+	4. Display only the description (in the ascending alphabetical order) 
+	   and store the sorted result in a file called sorted.
+ 	5. Sort the file in the order of QOH and display item number and 
+    	   QOH in that order.
+	6. Display the duplicate lines in the files.
+	7. Display the first 3 lines of the file sorted.
+	8. Display only the item numbers that too with only one 0. i.e. I001 
+	   should be displayed as I01.
+	9. Display the number of lines that contains a 100 in it.
+	10. Display only those records for which the QOH field is less than 100.
+	11. Display the details in the order description:item number:ROL:QOH.
+	12. Sort the file in the order of QOH within Description which should 
+	    be in the descending Alphabetical order and store it in a file 
+	    which has your name.  Using the same command line,  
+	13. Display the first 4 lines on the screen also.
+	14. Display the entire records in the file but the field separator 
+	    should be a hyphen(-) instead of colons (:). 
+	    Display those records which does not contain 10 in it.
+	    Display the records as 
+		item number 	description 	QOH
+
+	    Note that the field separator has to be a tab character.
+

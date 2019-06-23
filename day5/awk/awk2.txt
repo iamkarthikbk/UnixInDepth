@@ -1,0 +1,23 @@
+Topic : AWK
+Assignment : 2
+
+1. Input file has the following structure.
+   Name mark1 mark2 mark3 mark4
+
+   a) Output name and total marks for each student
+   b) Output name and message whether the person has failed or passed
+   c) Output class average for each subject
+   d) Output highest in each subject as well as total
+
+2. Input file has the following structure.
+   Empno  Name  Department  Salary
+   a) Find the income tax for each person
+   b) Find the total salary for a given department
+
+3. Input file has the following structure.
+   Name   runs in a number of innings
+   a) Find total # of runs scored by each batsman
+   b) Find average of each batsman
+   c) Find batsman with highest average
+   d) Find total # of centuries scored by each batsman
+   e) Find total # of centuries in the whole file

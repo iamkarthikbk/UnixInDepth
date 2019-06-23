@@ -1,0 +1,183 @@
+1.
+$ . mypgm
+a) . stands for a command
+b) . stands for the current directory
+c) . stands for the parent directory
+d) none of these
+
+2. 
+a=10
+bash
+echo $a
+
+The display is
+a) empty string
+b) string 10
+c) integer 10
+d) none of these
+
+3.
+a=10
+bash
+a=ten
+<ctrl>d
+echo $a
+
+The display is
+a) 10
+b) ten
+c) empty string
+d) none of these
+
+4.
+a=3+4
+echo $a
+a) 3+4
+b) 7
+c) error
+d) none of these
+
+5.
+expr 3 - 4 >/dev/null
+echo $?
+
+a) 0
+b) 1
+c) -1
+d) none of these
+
+6. set "we are the world"
+   echo $#
+a) 1
+b) 4
+c) error
+d) none of these
+
+7. mkdir zz; cd zz; set `ls`
+   
+a) will display all variables
+b) $* will be output of ls command
+c) $* will be ls
+d) none of these
+
+8. a=cat; b=$atle; echo $b
+a) empty string
+b) cattle
+c) atle
+d) none of these
+
+9. a=rama; b=krishna; c="$a+$b"
+a) none of these
+b) ramakrishna
+c) $a+$b
+d) rama krishna
+
+10. set a b c d e f g h i j k l; echo $10
+a) a0
+b) b0
+c) j
+d) k
+
+11. echo `expr  10 == 10` `expr 10 != 10`
+a) 1 0
+b) 0 1
+c) 1 1
+d) 0 0
+
+12. read a b
+    # input given : this is a test input
+    echo $b
+a) is a test input
+b) is
+c) a
+d) none of these
+
+13. a=rama; b=raja; expr $a > $b
+a) creates a file called raja
+b) creates a file called rama
+c) $? is 1
+d) none of these
+
+14. 
+if ls x ; then
+   echo "one"
+else
+   echo "two"
+fi
+a) displays one if there is a file called x
+b) displays two if there is a file called x
+c) displays one if there is a variable called x
+d) always displays one
+
+15.
+while test ! -e x; do
+	:
+done
+a) loops until a file x is created
+b) loops until file x is removed
+c) always an infinite loop
+d) none of these
+
+16.
+expr 3 * 5
+a) none of these
+b) displays 3 * 5
+c) 3 <all filenames> 5
+d) 15
+
+17.
+set one two three four five six seven 
+while [ $# -ne 0 ] ; do
+	echo $1
+	shift 2
+done
+a) displays one three five seven seven ...
+b) displays one three five seven
+c) does not enter the loop at all
+d) none of these
+
+18. 
+set 1 2 3 4 5 
+s=0
+while $# -ne 0; do
+	s=`expr $s + $1`
+	shift
+done
+echo  $s
+a) displays 15
+b) displays 14
+c) displays 10
+d) none of these
+
+19.
+set `ls`
+c=0
+while [ -n "$1" ]; do
+	if [ -f $1 ]; then
+		c=`expr $c + 1`
+		shift
+	fi
+done
+echo $c
+
+a) counts the # of files
+b) counts the # of directories
+c) counts the # of files and directories
+d) none of these
+
+20.
+set `ls`
+while [ -n "$1" ]; do
+	if echo $1 | grep a ; then
+		rm $1
+	fi
+	shift
+done
+a) remove filenames having a
+b) remove file with the name a
+c) remove file whose name starts from a
+d) none of these
+
+
+
+

@@ -1,0 +1,83 @@
+awk:
+tool developed by Aho, Weinberger, Kernighan
+both number crunching and string manupalation
+
+program in awk : 
+rules
+each rule has <pattern> { <action> }
+These rules applied on given datafile in sequence
+
+run:
+1. awk 'awk script' datafiles
+2. awk -f awkfile datafiles
+3. ./awkfile datafiles
+   #! /usr/bin/awk -f
+
+$ awk '{print }' x.dat
+one two
+three four five
+six seven
+eight nine ten
+$ awk '{print $0 }' x.dat
+one two
+three four five
+six seven
+eight nine ten
+$ 
+$ awk '{print $1 }' x.dat
+one
+three
+six
+eight
+$ awk '{print NF }' x.dat
+2
+3
+2
+3
+$ awk '{print $NF }' x.dat
+two
+five
+seven
+ten
+
+# rule with action
+	action is performed on each line
+# pattern no action
+	all lines satisfying the pattern are displayed
+
+$ awk '/f/ {print $1}' x.dat
+three
+$ awk '/n/ {print $1}' x.dat
+one
+six
+eight
+
+
+$ ls -l | sed '1d' | awk '{print $NF}'
+points.txt
+x.dat
+y.txt
+$ ls -l | sed '1d' | awk '$5 > 100 {print $NF}'
+points.txt
+y.txt
+
+------------------
+patterns:
+- regex
+- relational pattern
+- compound pattern
+- BEGIN
+- END
+- range pattern
+-------------------
+
+
+
+
+
+
+
+
+
+
+

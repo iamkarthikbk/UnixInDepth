@@ -1,0 +1,67 @@
+export:
+export variable
+variable becomes available to the child process
+environmental variable
+child gets a copy
+child cannot change the variable of the parent
+
+set the env:
+startup files
+.profile : login
+.bashrc  : start shell
+will be in the home directory of the user
+
+
+eval:
+does one pass over the command line
+$ a=b
+$ $a=india
+b=india: command not found
+$ eval $a=india
+$ echo $b
+india
+
+evaluation of expr:
+let command or (( ))
+$ ((a=10))
+$ echo $a
+10
+$ 
+$ ((b=$a+5))
+$ echo $b
+15
+$ ((b=b+5))
+$ echo $b
+20
+$ ((b++))
+$ echo $b
+21
+$ let c=25
+$ echo $c
+25
+$ let c=25+34
+$ echo $c
+59
+$ ((3<4))
+$ echo  $?
+0
+$ ((3>4))
+$ echo  $?
+1
+$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

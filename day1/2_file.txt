@@ -1,0 +1,113 @@
+command:
+0. man
+1. touch
+	a) create a file or
+	b)	
+2. ls
+	list all files and directories
+3. pwd
+	print working directory 
+4. mkdir
+	make a directory
+5. cd 
+	change directory
+
+6. cat 
+	display a file; concatenate
+
+7. mv
+	move
+8. cp
+	copy
+9. rm
+	remove
+10. ln
+	link
+11. wc
+	word count
+
+file:
+	each file is an inode
+		inode : data structure
+	each file has an inode #
+
+	inode has # of fields (metadata) followed by the file content
+	
+
+	time : 
+	access time
+	change time
+	modification time
+	birth time(?)
+
+	size:
+	stored in bytes
+	
+	file type:
+	indicated by the first char in the first field of output of ls -l
+	- : regular file
+	d :  directory
+	c :	 character device
+	b :  block device
+	l :  symbolic link
+	s :  socket file
+    p :  named pipe
+
+permissions:
+	three user hierarchy:
+	- user or owner
+	- group
+	- others
+	super user : name is root
+	status of the most trusted user
+	can do anything with the system
+
+	r : read or access
+	w :  write or modify
+	x : execute ...
+
+	what will be the permission when we create a file?
+	depends on umask
+
+	chmod : to change the permissions
+
+
+	set user bit : s instead of x in the place for execute for the user
+	when any user runs this program, he/she will have the power of the owner
+	of the file - effective user
+	set group bit :
+
+	bash:
+	born again bourne shell
+	commands:
+	echo : output command
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+

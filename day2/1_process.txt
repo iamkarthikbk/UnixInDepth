@@ -1,0 +1,18 @@
+A program in a state of execution : process
+command : ps
+Pid (process id) : unique to a process
+
+parent spawns a child
+- to delegate work
+- start a new process
+
+child signals the parent when it is complete
+
+kill : uses to communicate
+       uses a signal number
+
+background job: shell feature; end the command with &
+orphan process reports to process called init
+init is the last process to die
+pid of init if there is no namespace concept is 1
+

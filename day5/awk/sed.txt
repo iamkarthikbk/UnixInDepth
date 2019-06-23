@@ -1,0 +1,21 @@
+# sed : stream editor
+#	change the input on the fly
+#	also a filter
+#	commands  : single letter; cryptic
+
+# format:
+# single addr
+# or
+# double addr
+
+$ then
+# command
+
+# by default, prints
+# suppress : -n option
+# p : print
+# d : delete
+# s : substitute
+
+
+

@@ -1,0 +1,20 @@
+regular expression:
+.  : any char
+*  : what precedes it matched 0 or more times
++  : what precedes it matched 1 or more times
+{5} : what precedes is matched 5 times
+{3,5} : what precedes can occur 3 to 5 times
+
+anchor:
+^ : beginning
+$ : end
+
+char class:
+[aeiou]  : a lower case vowel
+[^aeiou] : ^ : inverter : match anything other than vowel
+
+[0-9] : matches a digit
+
+back ref or memory:
+whatever we put in parentheses is remembered ; can be recalled
+

@@ -1,0 +1,78 @@
+Assignment : 1
+Course : Unix
+Topics : Unix commands
+
+1. What do these commands do ? Which of these are different in DOS ?
+   a) cd .
+   b) cd ..
+   c) cd
+
+2. Experiment with these commands.
+   a) cp f1 f2
+   b) mv f1 f2
+   c) ln f1 f2
+   What happens if both source and destination files exists ?
+   What happens if the source file is not there and destination file exists ?
+
+3. Experiment with permissions on the directory
+   a) move to the directory
+   b) list the files in the directory
+   c) copy file into the directory
+   d) copy file from the directory
+
+4. Experiment with different options.
+   a) ls -l
+   b) ls -t
+   c) ls -x
+   d) ls -i
+   e) ls -a
+   f) ls -al
+   g) ls -s
+
+5. Observe the first line of ls -l command. Find what happens if you link files.
+
+6. What happens in the command cat f1 f2 f3 if
+   a) all files exist
+   b) f2 does not exist
+
+7. What happens in the command rm f1 f2 f3 if
+   a) all files exist
+   b) f2 does not exist
+
+8. Experiment
+   touch f1
+   touch -t <time> f1
+
+9. Check the following commands
+   a) od filename
+   b) df
+   c) du
+
+10. ln a b
+    ln b c
+    ln c d
+    How many links will each of the files have ?
+
+11. What happens on cp (if the destination file exists)
+    a) to # of links
+    b) ownership
+    c) permissions
+    d) does umask affect the destination ?
+
+12. What happens if we delete an open file ?
+
+13. What happens if we copy a hard linked file ?
+
+14. What happens if we copy a symbolic linked file ?
+
+15. What happens if symbolic link a symbolic linked file ?
+
+16. Experiment with a binary file which has more than one link, give different
+    outputs depending on the way of invocation.
+
+17. Play with set user bit.
+
+18. Examine when the access time, change time and modification time are changed.
+
+19. What does touch change ?
+

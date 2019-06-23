@@ -1,0 +1,229 @@
+1. for i in 10 , 20 , 30
+   do
+       echo test
+   done
+a) test displayed 5 times
+b) test displayed 3 times
+c) error test command required arguments
+d) none of these
+
+2. for i in apple banana carrot; do
+       x=i
+   done
+   echo $x
+a) i
+b) carrot
+c) apple
+d) none of these
+
+3. a=10; ((b=a)); echo $b
+a) 10
+b) a
+c) $b
+d) none of these
+
+4.  
+   for i in `seq 5`; do
+		((s+=i))
+   done
+   echo $s
+a) 15
+b) error ; s not initialized
+c) 5
+d) none of these
+
+5. 
+x=0
+case x in 
+   0) echo "zero";;
+   *) echo "non zero";;
+esac
+
+a) non zero
+b) zero
+c) error
+d) none of these
+
+6.
+echo $((3+4))
+a) 7
+b) 3+4
+c) 0
+d) 1
+
+7.
+((3>4))
+a) none of these
+b) displays 0
+c) $? will be 0
+d) creates a file named 4
+
+8.
+select a in one two three
+do
+	:
+done
+This code displays the options.
+a) selecting 1 makes variable a one
+b) selecting one makes variable a 1
+c) selecting 0 makes variable a one
+d) none of these
+
+9. File mypgm.sh contains the following code.
+What happens when mypgm.sh is run?
+
+while getopts abcd xyz
+do
+:
+done
+a) options are a b c d
+b) options are x y z
+c) variable xyz always takes the value abcd
+d) variable abcd can take any combination of x y or z
+
+10.
+File mypgm.sh contains the following code.
+What happens when mypgm.sh as
+bash mypgm.sh ad eh
+
+while getopts abcd xyz
+do
+:
+done
+
+a) exits the while loop as there is no option
+b) is stuck in the loop for ever
+c) options ad are consumed by the while loop
+d) none of these
+
+11. 
+for i in a b c; do
+	echo -n $i
+	if [ $i = b ]; then
+		break
+	fi
+done
+echo over
+
+a) output is abover
+b) output is ab
+c) error in test command
+d) none of these
+
+12.
+for i in a b c; do
+	echo -n $i
+	if [ $i = b ]; then
+		exit
+	fi
+done
+echo over
+a) output is ab 
+b) output is abover
+c) error in test command
+d) none of these
+
+13.
+a=b; b=c; export $a
+bash
+echo $a
+a) empty string
+b) a
+c) b
+d) c
+
+14.
+a=one
+export a
+bash
+a=two
+bash
+echo $a
+a) two
+b) one
+c) empty string
+d) none of these
+
+15.
+if ((1)) ; then
+	echo false
+else
+	echo true
+fi
+a) false
+b) true
+c) error : what follows if is not a command
+d) none of these
+
+16.
+# assume that there are no symbolically linked file
+cmd=rm
+set -- `ls -l | tail -n +2`
+while [ $# -ne 0 ]; do
+	if [ $5 -eq 0 ]; then	
+		$cmd $9
+	fi
+	shift 9
+done
+What does this do?
+a) removes all empty files
+b) error as $cmd is not a command
+c) removes the first file which is empty
+d) removes all files
+
+
+17.
+set -- `ls -l | tail -n +2`
+# assume that there are no symbolically linked file
+while [ $# -ne 0 -a  ! -d  "$9" ] ; do
+	shift 9
+done
+if [ -n "$9" ] ; then
+	echo $9
+else
+	echo none
+fi
+
+a) checks whether a directory contains an embedded directory and 
+   if yes displays the name of the first directory encountered
+b) checks whether a directory contains embedded directories and 
+   if yes displays the names of all directories
+c) gives a syntax error
+d) results in an infinite loop
+
+18.
+ls -l | sed '1d' | grep "^l"
+a) list all symbolically linked files
+b) list all filenames having l
+c) list all filenames starting with ^l
+d) list all filenames which do not have l
+
+19.
+while read <myfile ; do
+	echo $REPLY
+done
+a) none of these
+b) displays all lines of the file myfile
+c) displays REPLY as many times as the # of lines  in the file
+d) displays the first word of each line of myfile
+
+20.
+n=1
+while [ $n -eq 1 ]; do
+	echo one
+	echo two
+	echo three
+	((n--))
+done >out 
+a) out contains
+   one
+   two
+   three
+b) out is be empty
+c) out contains one
+d) out contains three
+
+
+
+
+ 

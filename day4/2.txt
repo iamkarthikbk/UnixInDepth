@@ -1,0 +1,158 @@
+1. alias ps="echo one"
+   alias ps="echo two"
+   ps
+
+a) output is two
+b) output is one
+c) executes /bin/ps
+d) none of these
+
+2. tail -n +1 myfile
+a) displays the entire file myfile
+b) displays all lines but for the first of myfile
+c) displays the last line
+d) none of these
+
+3. Comment.
+   cat myfile
+   cat <myfile
+a) if myfile is not found, error given by cat in first case and
+   given by bash in second case
+b) first command displays the string myfile and the second displays
+   the content of the file myfile
+c) second command displays the string myfile and the first displays
+   the content of the file myfile
+d) there is no difference
+
+4. ls | ps
+a) none of these
+b) displays listing of files and then listing of processes
+c) displays listing of files only
+d) gives an error
+
+5. This is the way of adding the current directory to the end of the PATH.
+a) PATH=$PATH:.
+b) PATH=PATH:.
+c) $PATH=$PATH:.
+d) none of these
+
+6. To execute a program in 'C', what happens if we add
+   #! /usr/bin/gcc
+   as the first line of the file
+a) pre-processor gives an error
+b) bash gives an error as the program is not a loadable image
+c) bash gives an error as gcc is not a loadable iamge
+d) program will run and produce the expected output
+
+7. cat file1 >file2
+a) if file2 exists and file1 does not, file2 gets truncated
+b) copies the string file1 into a file called file2
+c) always same as cp file1 file2
+d) none of these
+
+8. A directory contains files a1 a2 a3 a4.
+   mv a* b*
+a) gives an error
+b) changes filenames a1 a2 a3 a4 to b1 b2 b3 b4 respectively
+c) does nothing as there is no file called a*
+d) none of these
+
+9. echo ??
+   displays ??
+This implies that 
+a) there is no filename of two characters in the directory
+b) there is a file with the filename ??
+c) echo displaying a string literal and does not try to match filenames
+d) none of these
+
+10. echo ab*d
+a) none of these
+b) matches the filename ab*d
+c) matches the filename ad
+d) matches the filename zabdz
+
+11. ls | grep txt$
+a) will display all filenames ending in txt
+b) will display all filenames ending in txt$
+c) will display names of all text files
+d) none of these
+
+12. File myfile contains two lines given as follows:
+aaa bbb
+ccc ddd
+The command cut -f2 myfile will display
+a) displays both the lines
+b) displays two lines
+   bbb
+   ddd
+c) gives an error
+d) displays two lines
+	aaa
+	ccc
+
+13. cat a b c >/dev/null
+Files a and c exist and b does not.
+What is displayed on the screen?
+a) error message; file b not found
+b) content of both a and c
+c) both content of a and c and error message
+d) none of these
+
+14. head myfile | tail -1
+a) display the 10th line from the beginning of myfile
+b) display the 10th line from the end of myfile
+c) gives an error; tail is not provided any file as input
+d) none of these
+
+15. ls ; ls
+a) output of ls appears twice one after another
+b) Each line output of ls appears twice
+c) output of first ls commands becomes input to the second ls command
+d) none of these
+
+16.
+echo "stupid" | wc -c
+a) Display is 6
+b) Display is 1
+c) Display is stupid
+d) error as wc does not know how to play with the output of echo
+
+17.
+Which of the following is true?
+a) orphan process has no parent
+b) orphan process is a dead process
+c) zombie can be removed by killing it
+d) parent process calls wait to remove the orphan process
+
+18.
+There is no file called myfile
+ls myfile
+echo $?
+echo $?
+The last output is
+a) 0
+b) non zero value
+c) $?
+d) none of these
+
+19.
+l?
+a) none of these
+b) executes ls command
+c) executes l command
+d) executes one of the commands whose name has l and then any one character
+
+20.
+echo "one"; echo "two"
+The output is
+a) none of these
+b) onetwo
+c) one two
+d) two
+
+20. 
+
+
+
+
+

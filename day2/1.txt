@@ -1,0 +1,158 @@
+1. ln a b
+Which of the following is true?
+a) both a and b will have the same inode number
+b) b is a copy of a
+c) removing a will remove b
+d) none of these
+
+2. cp x y
+Which of the following is true?
+a) if y is a new file, permission of the file depends on umask
+b) if y is a new file, permission of the file is same as that of x
+c) if y is an existing file, this command requires read permission on y
+d) none of these
+
+// a and c are both right
+3. File a exists.
+   ln a b
+   ln b c
+   ln c d
+Which of the following is true?
+a) a will have 4 links
+b) b will have 3 links
+c) c will have 4 links
+d) none of these
+
+4. rm file1
+For this to work,
+a) none of these
+b) user should have write permission on file1
+c) user should have read permission on the directory in which file1 resides
+d) user should be the owner of file1
+
+5. ln -s abcd x
+Which of the following is true
+a) size of file x is 4
+b) abcd should exist as a file
+c) both abcd and x will have the same inode number
+d) none of these
+
+6. Which of the following commands on a symbolically linked file
+   is not forwarded to the name contained in the symbolically linked file?
+a) rm
+b) cat
+c) cp
+d) touch
+
+7. Which of the following is true?
+a) mv across the file system is copy and remove
+b) mv across the directory is copy and remove
+c) mv in the same directory is copy and remove
+d) mv is always copy and remove
+
+8. /usr/bin/passwd program can change the /etc/shadow which has no permission
+   for the normal user because
+a)  /usr/bin/passwd has set user bit
+b)  /etc/shadow has set user bit
+c)  /usr/bin/passwd has super user bit
+d)  /usr/bin/passwd has permissions rwx__x__s
+
+
+9. ln file1
+a)  will change change time of file1
+b)  will change access time of file1
+c)  will change modification time of file1
+d)  will not change any time of file1
+
+
+10. make tool uses _____ time to determine whether target file is older
+    than source files
+a) modification time
+b) access time
+c) change time
+d) all of these
+
+11. a = 10
+The above statement in shell
+a) causes a syntax error
+b) assigns the number 10 to variable a
+c) assigns the string "10" to variable a
+d) compares the value of variable a with 10
+
+12.
+echo 3 + 4
+a) displays 3 + 4
+b) displays 7
+c) gives an error
+d) none of these
+
+13. umask 000
+    touch newfile
+What is the permission on newfile?
+a) 666
+b) 777
+c) 000
+d) none of these
+
+14.
+If a directory is sticky, then
+a) none of these
+b) directory cannot be removed
+c) files in this directory can be removed only by the super user
+d) directory cannot be moved
+
+15. What happens in the command cat f1 f2 f3 if f2 does not exist?
+a) displays f1 then error message and then f3
+b) displays f1 then error messsage and stops
+c) displays f1 then f3
+d) none of these
+
+16. which of the following is true?
+a) we can copy a file of other users if we have read permission
+b) we can move a file into a directory if we have read permission on the file
+c) we can symbolic link a file if we have read permission on the file
+d) we can remove a file if we have write permisson on the file
+
+17.
+x=pes
+echo "x : $x"
+Output is
+a) x : pes
+b) x : $x
+c) x:pes
+d) "x : pes"
+
+18.
+mv a b c
+The man page says that c should be a directory.
+What would this command do?
+a) move files a and b to the directory c
+b) rename b as c and rename a as b
+c) rename a as b and b as c
+d) move a to b; then b to c; effectively move a to c
+
+19.
+a and b are existing files and temp does not exist
+mv a temp
+mv b a
+mv temp b
+What do these commands do?
+a) none of these
+b) there will be a file called temp after these 3 operations
+c) content of a is copied to b and content of b is copied to a
+d) cat a before and after executing the above commands will always 
+   give the same output
+
+20.
+File x has 3 links. 
+mv x y
+What will be the # of links in y
+a) 3
+b) 1
+c) 4
+d) none of these
+
+
+
+
+ 

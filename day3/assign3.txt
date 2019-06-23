@@ -1,0 +1,72 @@
+Course : bash control structures 
+
+1. Write a shell script to display "Good Morning" or "Good Afternoon" 
+   or "Good Evening" 
+        pgm `date` 
+        pgm fri sep 3 13:32:07 IST 2004 
+
+2. Write a shell script to take two filenames from the user.  Check whether 
+   both files compares same or not. If compares same, then delete 
+   the second one. (Use cmp command) 
+   ask user to confirm before deletion 
+   give error msg if the files are not found 
+
+3. Write a shell script to take the username from the user. Check whether 
+   the user is logged in or not. If he is logged in, find in how many 
+   terminals he is logged in and also display all the terminal number. 
+   (Use who and cut command) 
+
+4. Write a shell script to display the command line arguments in 
+   reverse order. 
+
+5. Write a shell script to take year from the command line argument.  If the 
+   argument is not given then, consider it as the current year. Also check 
+   whether the year is leap or not. 
+
+6. Write a shell script to take input from the user 
+   if he is logged in, 
+     send a message 
+   else 
+     send a mail 
+
+7. Write a shell script to create n directories and each directory 
+   Should have a file whose  content is same as the filename. 
+
+8. Walk through the output of ls -l command. display the filename, 
+   filetype and size. To get the file type, use file command. 
+
+9. Given date, month and year as input, find the day of the week. 
+   use cal and grep. 
+
+10. Run the shell script in the background, which finds 
+    a) when a file is created 
+    b) when user logs in 
+
+11. Find # of files in the current dierctory having $1 number of links. 
+
+12. ./param a 'b c' d 
+    Output of parameters should be 
+    1: a 
+    2: b c 
+    3: d 
+
+13. Given a filename, find the other filenames linked to the same inode 
+    in the current directory 
+
+14. Display 3 digit number in words 
+
+15. Write a script Suffix that rename a file by adding a suffix. 
+    Suffix abc .xyz 
+    Output : abc.xyz 
+
+16. Write a script Unsuffix to remove the suffix 
+    Unsuffix abc.xyz .xyz 
+    Output : abc 
+
+17. Write a script called counttime that prints number of hours and 
+    minutes that a user has been logged on. 
+    (Use date and who commands.) 
+
+18. Write a script, which takes the name of the user and prints the home 
+    directory. 
+    (Use /etc/passwd) 

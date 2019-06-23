@@ -1,0 +1,60 @@
+Assignment
+
+1. logged -n user1 
+   - give a message when user1 logs out 
+
+2. isfile -n f 
+   give a message when f is removed 
+
+3. loginfo -t 600 > stat & default = 300 seconds 
+   a) collect information every 10 minutes and put in a file 
+   b) indicate who logs in / logs out 
+
+4. Find number of files having 1 link, 2 link , ... 
+
+5. logged user1 (wait until user1 logs in) 
+   output : user1 logged onto tty ... 
+
+6. Write a regular expresion for an email-id 
+
+7. Write a menu driven script to 
+   1. copy 
+   2. move 
+   3. ln 
+   4. rm 
+   5. exit 
+
+8. Delete a sub tree 
+
+9. Find the biggest file in the sub directory 
+
+10. Given a file containing a list of strings, 
+    find the number of occurences of each string. 
+
+11. Femove comments from a shell program 
+
+12. Remove empty lines from a file 
+
+13. Given a file containing a word on each line,
+
+a) add a new word
+
+b) add the word only if it does not exist
+
+c) remove a given word
+
+d) find the length of each word
+
+e) create a file which contains words and their lengths
+
+
+
+14. execute number of sleep commands in the background
+
+a) find the number of commands still executing
+
+b) check whether a particular process is still executing
+
+c) stop all sleep commands
+
+

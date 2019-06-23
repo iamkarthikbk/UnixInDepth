@@ -1,0 +1,20 @@
+Topic : AWK
+Assignment : 1
+
+Write and test AWK scripts for the following specifications.
+
+1. Output total # of lines.
+2. Output the nth line.
+3. Output last field of every record.
+4. Output last field of last input record.
+5. Output records with more than 4 fields.
+6. Output records where the last field has value greater than 4.
+7. Output total # of fields for each record.
+8. Output every line that has at least one field.
+9. Output lines which exceed 40 characters.
+10. Output the second biggest file in a directory.
+11. Output fields of each record in the reverse order.
+12. Output sum of all fields for each record.
+13. Output sum of all fields for the whole file.
+14. Output only odd fields of each record.
+15. Output records removing the second field.

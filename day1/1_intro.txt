@@ -1,0 +1,73 @@
+"unix in depth"
+unix : operating system
+- is considered a software
+- connects between hardware and other softwares
+- resource manager
+	memory
+	processor
+	i/o
+	process
+	file system
+	device
+	network
+	users
+	...
+
+unix : operating system
+designed by ken Thompson
+at AT&T Bell labs
+called unix as a pun on the name of the failed OS mutlics
+
+- mutliuser OS
+- portable OS - written in 'C'
+- hierarchical file system - directories and subdirectories
+- device independence
+	treat any device as a file
+- file - stream of bytes
+         does not impose any structure
+- security -
+	login
+	password
+	permission
+- utilities
+	make
+	lex and yacc
+	awk
+	vi : visual editor
+	sed : stream editor
+- shell
+	provides an interface for the user
+	redirection
+	piping
+	alias
+	job control
+	metacharacters
+	language:
+		variables
+		i/o
+		selection
+		looping
+		functions
+		...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ 
